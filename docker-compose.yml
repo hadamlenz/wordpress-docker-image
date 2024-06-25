@@ -1,0 +1,9 @@
+version: '3'
+services:
+  ## to connect for wp-cli run `docker-compose exec --user=www-data wordpress-localhost /bin/bash`
+  ## for all other connections run `docker-compose exec wordpress-localhost /bin/bash`
+  wordpress-localhost:
+    image: 'localhost/wordpress-php8'
+    restart: always
+    build: .
+    container_name: wordpress
