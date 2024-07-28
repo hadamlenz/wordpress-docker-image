@@ -1,5 +1,5 @@
 # a pantheon centric wordpress image
-FROM wordpress:6.5.5-php8.3-fpm
+FROM wordpress:6.6.1-php8.3-fpm
 LABEL Author="h.adamlenz<hadamlenz@me.com>"
 
 RUN apt-get update && \
